@@ -18,9 +18,9 @@ Until the listing is live, add that URL as a custom MCP server named Kalent and 
 
 ## Tools
 
-- `search_talents_by_prompt` is the default. Pass the role in plain language.
+- `search_talents_by_prompt` when every requirement is a strict filter, such as job title, skill, location, company, seniority, or years of experience. Pass the role in plain language.
 - `search_talents_by_filters` only when the user explicitly asks for a structured Kalent filter search.
-- `search_qualified_talents_by_prompt` scores must-have criteria, returns a castingId. Poll `get_qualified_search_result` while nextAction is wait. Call `continue_qualified_search` when nextAction is continue or retry.
+- `search_qualified_talents_by_prompt` when a must-have needs a judgment a filter cannot make, such as managed a team of fewer than 3 people or worked at a B2B SAS. It returns a castingId. Poll `get_qualified_search_result` while nextAction is wait. Call `continue_qualified_search` when nextAction is continue or retry.
 - `create_sourcing`, then `add_talent_to_sourcing`.
 - `enrich_candidate_contacts` or `enrich_linkedin_contacts`, then `get_contact_enrichment_result`.
 - `create_sequence_blueprint` and `start_dynamic_sequences` for LinkedIn, email, WhatsApp, and SMS.
@@ -31,7 +31,7 @@ Search, qualification, and enrichment use workspace credits. A sequence messages
 
 ### find-talent
 
-Search Kalent for talent and, when asked, score must-have criteria. Ordinary searches use `search_talents_by_prompt`. Hand off enrichment and outreach to reach-candidates.
+Search Kalent when the brief is strict filters. Qualify only when a must-have needs a judgment a filter cannot make, such as team size managed or company type. Hand off enrichment and outreach to reach-candidates.
 
 ### reach-candidates
 
