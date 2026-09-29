@@ -29,7 +29,13 @@ Qualification spends workspace credits. Say so before the first qualified search
 
 `search_qualified_talents_by_prompt` returns a castingId. Poll `get_qualified_search_result` every 10–20 seconds while nextAction is wait. Call `continue_qualified_search` when nextAction is continue or retry. There are no webhooks.
 
-Show profiles and Kalent’s own verdicts. Do not invent a score.
+Each talent has Kalent’s own `aiVerdict`. Do not invent a score.
+
+- `green` is a strong qualification. Show these profiles first.
+- `amber` is a medium qualification. Show these next. An amber verdict is often only missing information on the profile. That does not mean the person did not do it, so these profiles are still worth reading.
+- `red` can still be interesting. Show reds after the greens and the ambers.
+
+Present greens, then ambers, in that order. Keep each profile with the verdict Kalent returned.
 
 ## Handoff
 
