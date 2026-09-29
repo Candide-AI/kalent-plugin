@@ -29,13 +29,13 @@ Qualification spends workspace credits. Say so before the first qualified search
 
 `search_qualified_talents_by_prompt` returns a castingId. Poll `get_qualified_search_result` every 10–20 seconds while nextAction is wait. Call `continue_qualified_search` when nextAction is continue or retry. There are no webhooks.
 
-Each talent has Kalent’s own `aiVerdict`. Do not invent a score.
+Each talent has Kalent’s own `aiVerdict`. Do not invent a score. On every profile you show, say the qualification in words: strong qualification for `green`, medium qualification for `amber`, red qualification for `red`.
 
-- `green` is a strong qualification. Show these profiles first.
-- `amber` is a medium qualification. Show these next. An amber verdict is often only missing information on the profile. That does not mean the person did not do it, so these profiles are still worth reading.
-- `red` can still be interesting. Show reds after the greens and the ambers.
+Show only the green profiles at first. Then say how many medium qualifications remain, that they can still be interesting, and that a medium qualification is often only missing information on the profile rather than proof the person did not do it. Do not list those profiles unless the user asks for them.
 
-Present greens, then ambers, in that order. Keep each profile with the verdict Kalent returned.
+If the user asks for the medium qualifications, show those profiles, each labeled medium qualification. Then say how many red qualifications remain and that they can still be interesting. Do not list the red profiles unless the user asks for them.
+
+If the user asks for the red qualifications, show those profiles, each labeled red qualification.
 
 ## Handoff
 
