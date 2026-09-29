@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kalent",
+  "version": "1.0.0",
+  "description": "AI talent sourcing: search, qualify, enrich, and outreach. Find and reach top candidates without leaving your AI workspace. Kalent searches 200M+ professional profiles, scores each must-have criterion, unlocks verified email and mobile, and runs LinkedIn, email, and WhatsApp sequences.",
+  "author": { "name": "Kalent", "email": "support@kalent.ai", "url": "https://kalent.ai" },
+  "homepage": "https://kalent.ai",
+  "repository": "https://github.com/Candide-AI/kalent-plugin",
+  "license": "MIT",
+  "keywords": ["sourcing", "recruiting", "talent search", "LinkedIn", "enrichment", "outreach", "MCP", "HR tech"],
+  "logo": "assets/logo.svg"
+}

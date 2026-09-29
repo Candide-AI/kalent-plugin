@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "kalent": {
+      "type": "streamable-http",
+      "url": "https://app.kalent.ai/api/mcp"
+    }
+  }
+}
