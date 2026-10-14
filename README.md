@@ -81,11 +81,11 @@ https://kalent.ai/legal/terms-of-use
 
 ## Support
 
+https://help.kalent.ai
+
 Email support@kalent.ai.
 
 Product docs: https://docs.kalent.ai
-
-TODO: there is no public support page. https://kalent.ai/support returns 404. Publish one, then set `extensions.com.openai.interface.supportURL` in `plugin.json` and `supportUrl` in `.claude-plugin/plugin.json` before OpenAI and Claude directory review. Both reviews require an HTTPS support URL.
 
 ## Registry namespace
 
@@ -119,4 +119,4 @@ Build the submission ZIP (files at the archive root, `.git` and `dist` left out)
 
 That writes `dist/kalent-plugin.zip`.
 
-Before review, add the unlisted demo URL as `extensions.com.openai.review.demo_recording_url`, and add the support URL from the section above. Enter reviewer credentials in the OpenAI dashboard. Do not put them in this repo.
+Before review, add the unlisted demo URL as `extensions.com.openai.review.demo_recording_url`. Enter reviewer credentials in the OpenAI dashboard. Do not put them in this repo.

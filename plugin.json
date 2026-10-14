@@ -18,6 +18,7 @@
         "category": "Productivity",
         "capabilities": ["Search candidates", "Qualify candidates", "Enrich contacts", "Run outreach sequences"],
         "websiteURL": "https://kalent.ai",
+        "supportURL": "https://help.kalent.ai",
         "privacyPolicyURL": "https://kalent.ai/legal/privacy-policy",
         "termsOfServiceURL": "https://kalent.ai/legal/terms-of-use",
         "defaultPrompt": [
