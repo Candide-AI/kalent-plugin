@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kalent": {
+      "type": "http",
+      "url": "https://app.kalent.ai/api/mcp"
+    }
+  }
+}

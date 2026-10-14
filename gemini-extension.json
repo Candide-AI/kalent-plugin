@@ -1,0 +1,10 @@
+{
+  "name": "kalent",
+  "version": "1.0.0",
+  "description": "AI talent sourcing: search, qualify, enrich, and outreach.",
+  "mcpServers": {
+    "kalent": {
+      "httpUrl": "https://app.kalent.ai/api/mcp"
+    }
+  }
+}
