@@ -1,0 +1,20 @@
+{
+  "name": "kalent",
+  "displayName": "Kalent",
+  "version": "1.0.0",
+  "description": "Search, qualify, enrich, and reach candidates from a Kalent workspace. The remote connector is OAuth at https://app.kalent.ai/api/mcp.",
+  "author": {
+    "name": "Kalent",
+    "email": "support@kalent.ai",
+    "url": "https://kalent.ai"
+  },
+  "homepage": "https://docs.kalent.ai",
+  "repository": "https://github.com/Candide-AI/kalent-plugin",
+  "license": "MIT",
+  "keywords": ["sourcing", "recruiting", "talent search", "LinkedIn", "enrichment", "outreach", "MCP"],
+  "icon": "./assets/logo.png",
+  "documentationUrl": "https://docs.kalent.ai",
+  "supportUrl": "https://help.kalent.ai",
+  "privacyPolicyUrl": "https://kalent.ai/legal/privacy-policy",
+  "termsOfServiceUrl": "https://kalent.ai/legal/terms-of-use"
+}
