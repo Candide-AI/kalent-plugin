@@ -25,6 +25,12 @@ A job title, a skill, or a city is not a reason to qualify. Stay on search unles
 
 Default tool is `search_qualified_talents_by_prompt`. Use `search_qualified_talents_by_filters` only after that same explicit request for a structured filter search.
 
+Put the entire brief in `prompt`, in the user's words: role, locations, years, must-haves, and nice-to-haves. Keep every technology the user named (Python, AWS, C++); do not replace it with a generic phrase such as "backend experience".
+
+Call `search_qualified_talents_by_prompt` with `qualificationCriterias` empty: Kalent extracts the criteria it judges from the brief by itself. Offer the field only after telling the user that, and fill it only if the user then explicitly asks, with the criteria the user validated. A requirement written in the brief is not such a request. Then send one must-have per item, in the user's wording, and keep nice-to-haves in `prompt`. Kalent removes exact duplicates only, so a criterion that restates the brief in other words is judged twice.
+
+With `search_qualified_talents_by_filters`, `qualificationCriterias` is required and holds the only criteria Kalent judges: nothing is extracted from the filters.
+
 Qualification spends workspace credits. Say so before the first qualified search if the user did not already ask for scoring.
 
 `search_qualified_talents_by_prompt` returns a castingId. Poll `get_qualified_search_result` every 10–20 seconds while nextAction is wait. Call `continue_qualified_search` when nextAction is continue or retry. There are no webhooks.
